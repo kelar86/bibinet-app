@@ -1,3 +1,56 @@
-<p>
-  search works!
-</p>
+<form clrForm [formGroup]="searchForm">
+  <clr-input-container>
+    <label>Наименование запчасти</label>
+    <input clrInput type="text" formControlName="query" class="dropdown-toggle" />
+  </clr-input-container>
+  <clr-input-container>
+    <label>Автомобиль (марка, модель)</label>
+    <input clrInput type="text" formControlName="car" />
+  </clr-input-container>
+
+  <clr-input-container>
+    <label>Двигатель</label>
+    <input clrInput type="text" formControlName="engine" />
+  </clr-input-container>
+
+  <div class="clr-form-control">
+    <div class="btn-group">
+      <button class="btn">Очистить</button>
+      <button class="btn">Показать</button>
+    </div>
+  </div>
+
+  <!-- <div class="clr-form-control">
+    <div class=" btn-group">
+      <div class="radio btn">
+        <input type="radio" name="btn-group-demo-radios" id="btn-any">
+        <label for="btn-demo-radio-1">По году</label>
+      </div>
+      <div class="radio btn">
+        <input type="radio" name="btn-group-demo-radios" id="btn-left">
+        <label for="btn-demo-radio-1">По кузову</label>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="clr-form-control">
+    <label class="clr-control-label"> Расположение </label>
+    <div class=" btn-group">
+      <div class="radio btn">
+        <input type="radio" name="btn-group-demo-radios" id="btn-any">
+        <label for="btn-demo-radio-1">Любое</label>
+      </div>
+      <div class="radio btn">
+        <input type="radio" name="btn-group-demo-radios" id="btn-left">
+        <label for="btn-demo-radio-1">Лево</label>
+      </div>
+      <div class="radio btn">
+        <input type="radio" name="btn-group-demo-radios" id="btn-right">
+        <label for="btn-demo-radio-1">Право</label>
+      </div>
+    </div>
+  </div> -->
+
+
+
+</form>
