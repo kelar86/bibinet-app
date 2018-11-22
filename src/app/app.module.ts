@@ -8,11 +8,11 @@ import { SupplierComponent } from './components/supplier/supplier.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { SearchComponent } from './components/search/search.component';
 import { ListComponent } from './components/list/list.component';
+import { ClarityModule } from '@clr/angular';
 
 registerLocaleData(en);
 
@@ -30,9 +30,9 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    NgZorroAntdModule
+    ClarityModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
