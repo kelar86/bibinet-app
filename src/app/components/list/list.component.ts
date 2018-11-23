@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-list',
@@ -15,9 +16,10 @@ export class ListComponent implements OnInit {
 
   private list = [1, 2, 3];
 
-  constructor() { }
+  constructor(private api: ApiService) { }
 
   ngOnInit() {
+    // this.api.getPartVariants('Б').subscribe(v => console.log(v));
   }
 
 }

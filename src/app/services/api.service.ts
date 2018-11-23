@@ -15,7 +15,6 @@ export class ApiService {
       variants: 'part_type',
       q: query
     };
-
     return this.http.get(url, { params: params });
   }
 
