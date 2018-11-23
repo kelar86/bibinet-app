@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-part-detail',
   template: `
-    <p>
+    <div>
       part-detail works!
-    </p>
+    </div>
   `,
   styles: []
 })
