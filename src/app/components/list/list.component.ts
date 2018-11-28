@@ -19,7 +19,10 @@ export class ListComponent implements OnInit {
   constructor(private api: ApiService) { }
 
   ngOnInit() {
+    this.api.getEngineVariants({ q: '4G', mark_gmodel: '7,272' }).subscribe(v => console.log(v));
     // this.api.getPartVariants('Б').subscribe(v => console.log(v));
+    // this.api.getMarkModelVariants('Lanc').subscribe(v => console.log(v));
+    this.api.getParts({ part_type: '3', mark_gmodel: '7, 272', engine: 303 }).subscribe(v => console.log(v));
   }
 
 }
